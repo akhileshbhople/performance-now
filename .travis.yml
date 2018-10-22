@@ -1,7 +1,13 @@
-os: linux-ppc64le
+os:
+  - linux-ppc64le
+  - linux
 language: node_js
 node_js:
   - "node"
   - "6"
   - "4"
   - "0.12"
+matrix:
+  exclude:
+  - os: linux-ppc64le
+    node_js: "0.12"
