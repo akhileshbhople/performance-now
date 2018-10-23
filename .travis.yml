@@ -1,6 +1,7 @@
 os:
   - linux-ppc64le
   - linux
+
 language: node_js
 node_js:
   - "node"
